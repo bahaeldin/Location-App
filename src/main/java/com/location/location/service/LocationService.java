@@ -10,7 +10,7 @@ public interface LocationService {
 
     public Location updateLocation(Location location);
 
-    public void deleteLocationById(Location location);
+    public void deleteLocation(Location location);
 
     public Location getLocationById(long id);
 
