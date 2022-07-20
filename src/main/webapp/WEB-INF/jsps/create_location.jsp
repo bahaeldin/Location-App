@@ -9,6 +9,16 @@
 
 <body>
 
+<form action="" method="">
+    Id:<input type="text" name="id"/><br>
+    Name:<input type="text" name="name"/><br>
+    Code:<input type="text" name="code"/><br>
+    Type: Urban<input type="radio" name="type"/><br>
+            Rural<input type="radio" name="type"/><br>
+    <input type="submit" name="" value="Save"/><br>
+
+</form>
+
 </body>
 
 </html>
