@@ -1,3 +1,4 @@
+
 package com.location.location.entity;
 
 import javax.persistence.*;
@@ -67,4 +68,5 @@ public class Location {
         return "Location{" + "id=" + id + ", name='" + name + '\'' +
                 ", code='" + code + '\'' + ", type='" + type + '\'' + '}';
     }
+
 }
