@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Create Location</title>
 </head>
-
+<h1>Hello World</h1>
 <body>
 
 </body>
