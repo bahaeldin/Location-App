@@ -11,7 +11,7 @@ public class LocationController {
     @RequestMapping( "/")
     public ModelAndView createLocation(){
 
-        return new ModelAndView("index");
+        return new ModelAndView("create_location");
     }
 }
 
