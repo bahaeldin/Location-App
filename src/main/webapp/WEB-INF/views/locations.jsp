@@ -17,19 +17,10 @@
         }
     </style>
 </head>
-
 <body style=" padding-top:50px;width: 1200px;color: darkgray;margin: 0 auto">
-<h1 style="color: darkgray">Create Location:</h1>
+<h1 style="color: darkgray">Locations:</h1>
 <hr style="color: darkgray">
-<form action="saveLocation"  method="post" style="padding: 10px">
-    Id:<input type="text" name="id"><br>
-    Name:<input type="text" name="name"><br>
-    Code:<input type="text" name="code"><br>
-    Type:<br>Urban<input type="radio" name="type" value="Urban"><br>
-    Rural<input type="radio" name="type" value="Rural"><br>
-    <input class="submit" type="submit" value="Save">
-</form>
-<div class="submit">${msg}</div>
+
 </body>
 
 </html>
