@@ -2,14 +2,16 @@ package com.location.location.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 @RestController
-@RequestMapping(path = "/locations") // http://localhost:8080/locations
+//@RequestMapping(path = "/locations") // http://localhost:8080/locations
 public class LocationController {
 
-    @RequestMapping(value = "/create-location")
-    public String createLocation(){
-        return "create_location";
+    @RequestMapping( "/")
+    public ModelAndView createLocation(){
+
+        return new ModelAndView("index");
     }
 }
 
