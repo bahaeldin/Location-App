@@ -66,7 +66,7 @@
         <th>Name</th>
         <th>Code</th>
         <th>Type</th>
-        <th>Action</th>
+        <th colspan="2">Action</th>
     </tr>
     </thead>
     <tbody>
@@ -81,6 +81,11 @@
             <td>
                 <a class="delete" href="deletelocation?id=${location.id}">
                     delete
+                </a>
+            </td>
+            <td>
+                <a class="delete" href="editlocation?id=${location.id}">
+                    edit
                 </a>
             </td>
             <% id++;%>

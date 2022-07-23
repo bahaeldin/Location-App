@@ -45,5 +45,22 @@ public class LocationController {
         modelMap.addAttribute("locations" , locations);
         return new ModelAndView("locations");
     }
+
+    @RequestMapping(value = "/editlocation")
+    public ModelAndView editLocation(@RequestParam("id") long id, ModelMap modelMap){
+        Location location = locationService.getLocationById(id);
+        modelMap.addAttribute("location" , location);
+        return new ModelAndView("editlocation");
+    }
+
+    @RequestMapping(value = "/updateLocation")
+    public ModelAndView updateLocation(@ModelAttribute("location") Location location,ModelMap modelMap){
+        locationService.creatLocation(location);
+        List<Location> locations = locationService.getAllLocations();
+        modelMap.addAttribute("locations" , locations);
+        return new ModelAndView("locations");
+    }
+
+
 }
 
