@@ -14,6 +14,20 @@
             margin-left: 0px;
             padding: 10px;
             font-size: 20px;
+
+        }
+        a{
+            text-decoration: none;
+            margin-top: -30px;
+            padding: 10px;
+            color: #111;
+            border: 1px solid #999;
+            width: 230px;
+            display: inline-block;
+            text-align: center;
+            background: buttonface;
+            font-size: 20px;
+            height: 25px;
         }
     </style>
 </head>
@@ -30,6 +44,11 @@
     <input class="submit" type="submit" value="Save">
 </form>
 <div class="submit">${msg}</div>
+<div class="submit">
+    <a href="/displayAll">
+        View Locations
+    </a>
+</div>
 </body>
 
 </html>

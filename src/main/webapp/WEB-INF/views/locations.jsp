@@ -15,12 +15,31 @@
             padding: 10px;
             font-size: 20px;
         }
+        table{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        table thead th{
+            border: 1px solid #999;
+            padding: 10px;
+            margin: 10px;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body style=" padding-top:50px;width: 1200px;color: darkgray;margin: 0 auto">
 <h1 style="color: darkgray">Locations:</h1>
 <hr style="color: darkgray">
-
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Type</th>
+    </tr>
+    </thead>
+</table>
 </body>
 
 </html>
