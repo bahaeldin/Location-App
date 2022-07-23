@@ -1,5 +1,7 @@
 <%@page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%--<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">--%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 
 <head>
@@ -41,14 +43,16 @@
     Code:<input type="text" name="code"><br>
     Type:<br>Urban<input type="radio" name="type" value="Urban"><br>
     Rural<input type="radio" name="type" value="Rural"><br>
-    <input class="submit" type="submit" value="Save">
+    <input class="submit" type="submit" value="Save"><br><br>
 </form>
-<div class="submit">${msg}</div>
+
 <div class="submit">
-    <a href="/displayAll">
+    <a href="displayAll">
         View Locations
     </a>
 </div>
+<hr>
+<div class="submit">${msg}</div>
 </body>
 
 </html>

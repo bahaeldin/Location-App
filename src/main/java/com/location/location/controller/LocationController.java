@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -17,7 +18,7 @@ public class LocationController {
     @Autowired
     private LocationService locationService;
 
-    @RequestMapping( "/")
+    @RequestMapping( "/create-location")
     public ModelAndView createLocation(){
         return new ModelAndView("create_location");
     }
@@ -34,6 +35,14 @@ public class LocationController {
     public ModelAndView displayLocations(ModelMap modelMap){
         List<Location> allLocations = locationService.getAllLocations();
         modelMap.addAttribute("locations",allLocations);
+        return new ModelAndView("locations");
+    }
+
+    @RequestMapping(value = "/deletelocation{id}")
+    public ModelAndView deleteLocation(@RequestParam long id,ModelMap modelMap){
+        locationService.deleteLocation(id);
+        List<Location> locations = locationService.getAllLocations();
+        modelMap.addAttribute("locations" , locations);
         return new ModelAndView("locations");
     }
 }
