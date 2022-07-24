@@ -35,23 +35,20 @@
 </head>
 
 <body style=" padding-top:50px;width: 1200px;color: darkgray;margin: 0 auto">
-<h1 style="color: darkgray">Create Location:</h1>
+<h1 style="color: darkgray">Edit Location:</h1>
 <hr style="color: darkgray">
-<form action="saveLocation"  method="post" style="padding: 10px">
-    Name:<input type="text" name="name"><br>
-    Code:<input type="text" name="code"><br>
-    Type:<br>Urban<input type="radio" name="type" value="Urban"><br>
-    Rural<input type="radio" name="type" value="Rural"><br>
+<form action="updateLocation"  method="post" style="padding: 10px">
+    Id:<input type="text" name="id" value="${location.id}" readonly><br>
+    Name:<input type="text" name="name" value="${location.name}"><br>
+    Code:<input type="text" name="code" value="${location.code}"><br>
+    Type:<br>
+    Urban<input type="radio" name="type" value="Urban"  ${location.type == 'Urban' ? 'checked' : ''}><br>
+    Rural<input type="radio" name="type" value="Rural" ${location.type=='Rural'?'checked':''}><br>
     <input class="submit" type="submit" value="Save"><br><br>
 </form>
 
-<div class="submit">
-    <a href="displayAll">
-        View Locations
-    </a>
-</div>
 <hr>
-<div class="submit">${msg}</div>
+
 </body>
 
 </html>
